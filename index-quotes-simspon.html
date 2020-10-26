@@ -14,10 +14,11 @@
       <h1 class="title">Simpson Quotes</h1>
       <p>Reload for another quote!</p>
 
-      <div class="content" id="quote">
+      <div class="content" id="quote"> 
       </div>
     </div>
-
+    <button onclick="refreshQuote()">Another quote</button>
+    
   </section>
 
   <!-- We need to load axios first! -->
@@ -44,6 +45,10 @@
 }
 
 fetchQuoteJSON();
+
+function refreshQuote() {
+  location.reload();
+}
 
   </script>
 </body>
