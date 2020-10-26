@@ -6,12 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Ajax quest challenge</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel='stylesheet' href='https://unpkg.com/bulma@0.7.5/css/bulma.min.css'>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <style>
-  </style>
 </head>
 
 <body>
@@ -41,9 +35,9 @@
         console.log('data decoded from JSON:', quote);
 
         const quoteHTML = `
-        <h1> ${quote.character} </h1>
-        <img src="${quote.image}" />
-        <p> ${quote.quote} </p> `;
+        <h1> ${quote[0].character} </h1>
+        <img src="${quote[0].image}" />
+        <p> ${quote[0].quote} </p> `;
         document.getElementById("quote").innerHTML = quoteHTML;
       });
 
